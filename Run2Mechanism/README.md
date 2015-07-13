@@ -69,7 +69,7 @@ cd CMSSW_7_1_12
 cmsenv
 mkdir prod
 cd prod
-git clone git@github.com:CMS-SUS-XPAG/GenLHEfiles.git
+git clone git@github.com:alefisico/GenLHEfiles.git -b v7114
 cd GenLHEfiles/Run2Mechanism
 ./installGenerators.sh
 source setupGenEnv.(c)sh
@@ -81,7 +81,7 @@ to make it easier to checkout and build CMSSW packages in $CMSSW_BASE/src if des
 If you do not have a GitHub account with a registered SSH key, you can replace the above
 `git clone` line with this alternative to download over HTTPS:
 ```
-git clone https://github.com/CMS-SUS-XPAG/GenLHEfiles.git
+git clone https://github.com/alefisico/GenLHEfiles.git
 ```
 
 Note: if you want to run MadGraph on multiple cores, you need to specify the number of cores
